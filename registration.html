@@ -1,0 +1,159 @@
+<!-- registration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="registrationBody">
+
+    <!-- BACKGROUND IMAGE -->
+    <img 
+    src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1600&auto=format&fit=crop"
+    id="registrationBg">
+
+    <div id="darkOverlay"></div>
+
+    <!-- NAVBAR -->
+    <div id="Rnavbar">
+
+        <div id="logo">
+            EVENT SPONSORSHIPS
+            <p>Rachnatmak Committee</p>
+        </div>
+
+        <div id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <button id="navBtn">
+            Apply Now
+        </button>
+
+    </div>
+
+    <!-- FORM SECTION -->
+
+    <div id="mainRegistrationContainer">
+
+        <!-- LEFT CONTENT -->
+
+        <div id="registrationLeft">
+
+            <h1>
+                Sponsor <span>Your Presence.</span>
+            </h1>
+
+            <p>
+                Connect your brand with passionate students,
+                literary events and meaningful collaborations.
+            </p>
+
+            <div class="leftCard">
+                <h3>Creative Exposure</h3>
+                <p>Promote your brand through engaging literary events.</p>
+            </div>
+
+            <div class="leftCard">
+                <h3>Student Reach</h3>
+                <p>Build visibility among energetic campus audiences.</p>
+            </div>
+
+        </div>
+
+        <!-- FORM CARD -->
+
+        <div id="registrationForm">
+
+            <h2>Registration</h2>
+
+            <form name="sponsershipRegistration">
+
+                <label for="username">Name</label>
+                <input type="text" id="username" required>
+
+                <label for="mobile_no">Mobile Number</label>
+                <input 
+                type="tel"
+                id="mobile_no"
+                pattern="[0-9]{10}"
+                title="Please enter exactly 10 digits"
+                required>
+
+                <label for="email_id">Email</label>
+                <input type="email" id="email_id" required>
+
+                <label for="shop_name">Shop Name</label>
+                <input type="text" id="shop_name" required>
+
+                <label for="shop_addr">Shop Address</label>
+                <textarea rows="3" id="shop_addr" required></textarea>
+
+                <label for="select_event">Select Event</label>
+
+                <select id="select_event">
+
+                    <option>Open Mic</option>
+                    <option>Poetry</option>
+                    <option>Creative Writing</option>
+
+                </select>
+
+                <label for="select_c_option">Contact Option</label>
+
+                <select id="select_c_option" required>
+
+                    <option>WhatsApp</option>
+                    <option>Instagram</option>
+                    <option selected>Call</option>
+
+                </select>
+                <!-- Instagram Field -->
+                <div id="instagramField">
+
+    <label for="instagram_id_field">Instagram ID :</label>
+
+    <input type="text" id="instagram_id" placeholder="@yourusername">
+</div>
+    <h6 id="whatsappNumber">Your mobile number must match your WhatsApp Number</h6>
+
+                <label for="select-time-slot">
+                    Select Time-Slot For Contact
+                </label>
+
+                <select id="select-time-slot" required>
+
+                    <option>Morning (9:00 AM - 12:00 PM)</option>
+                    <option>Afternoon (12:00 PM - 4:00 PM)</option>
+                    <option>Evening (4:00 PM - 7:00 PM)</option>
+                    <option>Night (7:00 PM - 9:00 PM)</option>
+
+                </select>
+
+                <button id="submitBtn" type="submit">
+                    Submit Registration
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

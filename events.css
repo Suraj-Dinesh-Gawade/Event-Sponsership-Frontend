@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* HERO SECTION */
+
+#heroSection{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#bgImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+/* NAVBAR */
+
+#navbar{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 70px;
+}
+
+#logoSection h2{
+    color: white;
+}
+
+#logoSection p{
+    color: #d0d0d0;
+    font-size: 14px;
+}
+
+#navLinks{
+    display: flex;
+    gap: 40px;
+}
+
+#navLinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.activeNav{
+    color: #f6b800 !important;
+}
+
+#navButton{
+    background-color: #f6b800;
+    color: black;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* HERO TEXT */
+
+#heroText{
+    position: relative;
+    z-index: 2;
+
+    margin-top: 120px;
+    text-align: center;
+}
+
+#heroText h1{
+    font-size: 90px;
+    font-weight: 700;
+}
+
+#heroText span{
+    color: #f6b800;
+    font-family: "Yellowtail", cursive;
+    font-weight: normal;
+}
+
+#heroText p{
+    margin-top: 20px;
+    color: #dddddd;
+    font-size: 20px;
+}
+
+/* FEATURED EVENT */
+
+#featuredEventSection{
+    padding: 80px;
+}
+
+#featuredCard{
+    display: flex;
+    gap: 50px;
+
+    border: 2px solid #f6b800;
+    border-radius: 25px;
+
+    padding: 40px;
+
+    background: rgba(20,20,20,0.95);
+}
+
+#featuredImage img{
+    width: 500px;
+    border-radius: 20px;
+}
+
+#featuredContent{
+    flex: 1;
+}
+
+#tag{
+    display: inline-block;
+
+    border: 1px solid #f6b800;
+
+    color: #f6b800;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+}
+
+#featuredContent h1{
+    font-size: 60px;
+}
+
+#featuredContent h3{
+    color: #f6b800;
+    margin-top: 10px;
+}
+
+#featuredContent p{
+    margin-top: 25px;
+    color: #d5d5d5;
+    line-height: 32px;
+}
+
+/* DETAILS */
+
+#eventDetails{
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.detailBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detailBox i{
+    color: #f6b800;
+}
+
+/* STATS */
+
+#eventStats{
+    display: flex;
+    gap: 50px;
+    margin-top: 35px;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stats i{
+    color: #f6b800;
+    font-size: 24px;
+}
+
+.registerBtn{
+    margin-top: 40px;
+
+    background-color: #f6b800;
+    color: black;
+
+    border: none;
+
+    padding: 18px 35px;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* SMALL EVENTS */
+
+#smallEventsSection{
+    display: flex;
+    gap: 40px;
+
+    padding: 0 80px 80px 80px;
+}
+
+.smallCard{
+    flex: 1;
+
+    background: #111;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    border: 1px solid #333;
+}
+
+.smallCard img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.smallContent{
+    padding: 30px;
+}
+
+.smallContent h2{
+    margin-bottom: 10px;
+}
+
+.smallContent p{
+    color: #d2d2d2;
+    line-height: 28px;
+}
+
+.smallDetails{
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smallDetails i{
+    color: #f6b800;
+}
+
+.smallBtn{
+    margin-top: 25px;
+
+    width: 100%;
+
+    background-color: transparent;
+    color: #f6b800;
+
+    border: 1px solid #f6b800;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+/* BRANDS SECTION */
+
+#brandsSection{
+    padding: 80px;
+    text-align: center;
+}
+
+#brandsSection h1{
+    font-size: 50px;
+}
+
+#brandsSection span{
+    color: #f6b800;
+    font-family: "Yellowtail", cursive;
+}
+
+#brandBoxes{
+    margin-top: 60px;
+
+    display: flex;
+    gap: 30px;
+}
+
+.brandCard{
+    flex: 1;
+
+    background: #111;
+
+    border-radius: 20px;
+
+    padding: 40px 25px;
+
+    border: 1px solid #2b2b2b;
+}
+
+.brandCard i{
+    font-size: 45px;
+    color: #f6b800;
+}
+
+.brandCard h3{
+    margin-top: 25px;
+}
+
+.brandCard p{
+    margin-top: 15px;
+    color: #cfcfcf;
+    line-height: 28px;
+}
+
+/* CTA */
+
+#ctaSection{
+    margin: 80px;
+
+    border: 2px solid #6f00ff;
+
+    border-radius: 25px;
+
+    padding: 40px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to right,#0d0d0d,#1b0038);
+}
+
+#ctaBtn{
+    background-color: #f6b800;
+    color: black;
+
+    border: none;
+
+    padding: 18px 35px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
