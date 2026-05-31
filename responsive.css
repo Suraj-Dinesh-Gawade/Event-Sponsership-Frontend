@@ -1,437 +1,479 @@
-/* =========================================
-   GLOBAL RESPONSIVE SETTINGS
-========================================= */
+@media (max-width:576px){
 
-*{
-    box-sizing: border-box;
-}
+    /* home */
+    /* HERO SECTION */
 
-html,
-body{
-    width: 100%;
-    overflow-x: hidden;
-}
+    #heroSection{
+        min-height: 140vh;
+    }
 
-img{
-    max-width: 100%;
-    height: auto;
-}
+    #bgImage{
+        min-height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-/* =========================================
-   LARGE TABLETS
-========================================= */
-
-@media (max-width: 1100px){
-
-    #heroSection,
-    #mainRegistrationContainer{
+    #heroContent{
+        width: 92%;
         flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        padding: 40px 35px !important;
-    }
-
-    .heroLeft,
-    .heroRight,
-    #registrationLeft,
-    #registrationForm{
-        width: 100% !important;
-    }
-
-    .heroLeft h1,
-    #registrationLeft h1{
-        font-size: 58px !important;
-        line-height: 72px !important;
-    }
-
-    #aboutContent{
-        grid-template-columns: 1fr !important;
-    }
-
-    .glassCard{
-        width: 100%;
-    }
-}
-
-/* =========================================
-   TABLETS
-========================================= */
-
-@media (max-width: 900px){
-
-    #navbar{
-        padding: 22px 30px !important;
-    }
-
-    #navLinks{
-        gap: 25px !important;
-    }
-
-    .heroLeft h1,
-    #registrationLeft h1{
-        font-size: 48px !important;
-        line-height: 62px !important;
-    }
-
-    .heroLeft p,
-    #registrationLeft p{
-        font-size: 18px !important;
-        line-height: 30px !important;
-    }
-
-    #quoteSection h2{
-        font-size: 34px !important;
-        line-height: 55px !important;
-    }
-
-    #statsSection{
-        grid-template-columns: repeat(2,1fr) !important;
-    }
-}
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 768px){
-
-    body{
-        overflow-x: hidden;
+        gap: 40px;
+        top: 52%;
     }
 
     /* NAVBAR */
 
     #navbar{
-        width: 100%;
-        padding: 18px 16px !important;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        gap: 18px;
+        padding: 15px 18px;
     }
 
-    #logo{
-        text-align: center;
-        font-size: 22px !important;
-        line-height: 32px;
+    #logoSection{
+        gap: 8px;
     }
 
-    #logo p{
-        font-size: 11px !important;
+    #logoIcon{
+        font-size: 20px;
+    }
+
+    #logoHeading{
+        font-size: 13px;
+    }
+
+    #logoText{
+        font-size: 9px;
     }
 
     #navLinks{
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        gap: 16px !important;
+        gap: 12px;
     }
 
     #navLinks a{
-        font-size: 14px !important;
+        font-size: 11px;
     }
 
-    #navBtn{
+    #applyBtn{
+        padding: 10px 12px;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+
+    /* LEFT HERO */
+
+    #leftHero{
         width: 100%;
-        max-width: 240px;
-
-        padding: 13px 20px !important;
-
-        font-size: 14px !important;
     }
 
-    /* HERO SECTION */
+    #heroHeading{
+        font-size: 37px;
+        line-height: 68px;
+        margin-top: 120px;
+        padding-left: 40px;
+    }
 
-    #heroSection,
-    #mainRegistrationContainer{
+    #brandText{
+        font-size: 49px;
+    }
+
+    #curveLine{
+        width: 120px;
+        margin-left: 200px;
+        margin-top: -15px;
+    }
+
+    #heroParagraph{
         width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
-        padding: 30px 16px !important;
-
-        gap: 35px;
-    }
-
-    .heroLeft,
-    .heroRight,
-    #registrationLeft,
-    #registrationForm{
-        width: 100% !important;
-    }
-
-    .heroLeft h1,
-    #registrationLeft h1{
-        font-size: 40px !important;
-        line-height: 52px !important;
-        text-align: center;
-    }
-
-    .heroLeft p,
-    #registrationLeft p{
-        font-size: 15px !important;
-        line-height: 28px !important;
-        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 25px;
     }
 
     /* BUTTONS */
 
-    .heroButtons{
+    #heroButtons{
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    #sponsorBtn,
+    #exploreBtn{
+        padding: 14px 22px;
+        font-size: 14px;
+    }
+
+    /* TRUST */
+
+    #trustBox{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #trustImages img{
+        width: 42px;
+        height: 42px;
+    }
+
+    /* RIGHT HERO */
+
+    #rightHero{
         width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 16px;
+        padding: 25px;
+        transform: skew(0deg);
     }
-
-    .primaryBtn,
-    .secondaryBtn{
-        width: 100%;
-    }
-
-    /* GLASS CARD */
-
-    .glassCard{
-        width: 100%;
-
-        padding: 28px 20px !important;
-
-        border-radius: 24px;
-    }
-
-    .glassCard h2{
-        font-size: 28px !important;
-        text-align: center;
-    }
-
-    /* FEATURE BOX */
 
     .featureBox{
-        display: flex;
-        align-items: flex-start;
-        gap: 15px;
-
-        margin-bottom: 28px;
+        gap: 18px;
+        transform: skew(0deg);
     }
 
-    .iconCircle{
-
-        width: 65px !important;
-        height: 65px !important;
-
-        min-width: 65px !important;
-        min-height: 65px !important;
-
-        border-radius: 50% !important;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+    .featureIcon{
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
         flex-shrink: 0;
-
-        font-size: 22px !important;
     }
-
-    .featureBox h3{
-        font-size: 18px !important;
-        line-height: 28px;
-    }
-
-    .featureBox p{
-        font-size: 14px !important;
-        line-height: 24px !important;
-    }
-
-    /* ABOUT CONTENT */
-
-    #aboutContent{
-        width: 100%;
-
-        display: grid;
-        grid-template-columns: 1fr !important;
-
-        gap: 20px;
-
-        padding: 25px 16px 60px !important;
-    }
-
-    .aboutCard{
-        width: 100%;
-
-        padding: 25px 20px !important;
-    }
-
-    .aboutCard h2{
-        font-size: 24px !important;
-    }
-
-    .aboutCard p{
-        font-size: 15px !important;
-        line-height: 28px !important;
-    }
-
-    /* STATS */
-
-    #statsSection{
-        width: 100%;
-
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-
-        gap: 16px;
-
-        padding: 20px 16px 50px !important;
-    }
-
-    .statCard{
-        width: 100%;
-        padding: 22px 14px !important;
-    }
-
-    .statCard h2{
-        font-size: 28px !important;
-    }
-
-    .statCard p{
-        font-size: 13px !important;
-    }
-
-    /* REGISTRATION FORM */
-
-    #registrationForm{
-        width: 100%;
-
-        padding: 25px 20px !important;
-
-        border-radius: 24px;
-    }
-
-    form{
-        width: 100%;
-    }
-
-    input,
-    textarea,
-    select{
-        width: 100%;
-        font-size: 15px !important;
-    }
-
-    textarea{
-        resize: vertical;
-    }
-
-    #submitBtn{
-        width: 100%;
-    }
-
-    /* QUOTE */
-
-    #quoteSection{
-        padding: 20px 16px 60px !important;
-    }
-
-    #quoteSection h2{
-        font-size: 28px !important;
-        line-height: 42px !important;
-    }
-
-    /* FOOTER */
-
-    #footer{
-        padding: 25px 16px !important;
-    }
-
-    #footer p{
-        font-size: 13px !important;
-        line-height: 24px;
-        text-align: center;
-    }
+.featureBox h2{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
+.featureBox p{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
 
-@media (max-width: 480px){
+.featureIcon{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
 
-    #navbar{
-        padding: 16px 12px !important;
-    }
+#statsSection{
+    flex-direction: column;
+    gap: 35px;
+    padding: 35px 20px;
+}
 
-    .heroLeft h1,
-    #registrationLeft h1{
-        font-size: 34px !important;
-        line-height: 46px !important;
-    }
+.statsCard h1{
+    font-size: 38px;
+}
 
-    .heroLeft p,
-    #registrationLeft p{
-        font-size: 14px !important;
-    }
+.statsCard p{
+    font-size: 15px;
+    margin-top: 8px;
+}
 
-    .glassCard{
-        padding: 22px 16px !important;
-    }
+.statsCard i{
+    font-size: 30px;
+    margin-bottom: 12px;
+}
 
-    .glassCard h2{
-        font-size: 24px !important;
-    }
+#whySection{
+    flex-direction: column;
+    padding: 70px 25px;
+    gap: 40px;
+}
 
-    .featureBox{
-        gap: 12px;
-    }
+#whyLeft{
+    width: 100%;
+}
 
-    .featureBox h3{
-        font-size: 16px !important;
-    }
+#whyLeft h1{
+    font-size: 52px;
+    line-height: 65px;
+}
 
-    .featureBox p{
-        font-size: 13px !important;
-    }
+#whyLeft p{
+    line-height: 30px;
+}
 
-    .iconCircle{
-        width: 55px !important;
-        height: 55px !important;
+#whyRight{
+    width: 100%;
+    flex-direction: column;
+}
 
-        min-width: 55px !important;
-        min-height: 55px !important;
+.whyCard{
+    width: 100%;
+}
 
-        font-size: 18px !important;
-    }
+#stepsSection{
+    padding: 70px 25px;
+}
 
-    #quoteSection h2{
-        font-size: 24px !important;
-        line-height: 36px !important;
-    }
+#stepsSection h1{
+    font-size: 52px;
+    line-height: 65px;
+}
 
-    #statsSection{
-        grid-template-columns: 1fr !important;
-    }
+#stepsContainer{
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
 
-    .statCard h2{
-        font-size: 24px !important;
-    }
+.stepCard{
+    width: 100%;
+}
 
-    .aboutCard{
-        padding: 22px 16px !important;
-    }
+.stepCard h2{
+    font-size: 52px;
+}
 
-    .aboutCard h2{
-        font-size: 22px !important;
-    }
+.stepCard i{
+    font-size: 42px;
+    margin: 18px 0;
+}
 
-    .aboutCard p{
-        font-size: 14px !important;
-        line-height: 26px !important;
-    }
+.stepCard h3{
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.stepCard p{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#ctaSection{
+    margin-left: 30px;
+    margin-right: 130px;
+}
+#ctaBtn{
+    margin-left: 10px;
+}
+
+
+
+/* events */
+
+#navbar{
+    padding: 15px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#logoSection h2{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#logoSection p{
+    font-size: 9px;
+    line-height: 14px;
+}
+
+#navLinks a{
+    font-size: 11px;
+}
+
+#navButton{
+    padding: 11px 14px;
+    font-size: 10px;
+    line-height: 14px;
+}
+#eventsHeroSection{
+    height: 500px;
+}
+#heroText{
+    margin-top: 50px;
+    padding: 0 18px;
+}
+
+#heroText h1{
+    font-size: 64px;
+    line-height: 78px;
+}
+
+#heroText span{
+    font-size: 70px;
+}
+
+#heroText p{
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#featuredEventSection{
+    padding: 40px 20px;
+}
+
+#featuredCard{
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+}
+
+#featuredImage img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+#featuredContent h1{
+    font-size: 42px;
+    line-height: 52px;
+}
+
+#featuredContent p{
+    line-height: 28px;
+}
+
+#eventDetails{
+    flex-direction: column;
+    gap: 15px;
+}
+
+#eventStats{
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#smallEventsSection{
+    flex-direction: column;
+    padding: 0 20px 50px 20px;
+    gap: 25px;
+}
+
+.smallCard{
+    width: 100%;
+}
+
+.smallCard img{
+    height: 220px;
+}
+
+.smallContent{
+    padding: 22px;
+}
+
+.smallContent h2{
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.smallContent p{
+    line-height: 30px;
+}
+
+.smallDetails{
+    margin-top: 18px;
+}
+
+#brandsSection{
+    padding: 60px 20px;
+}
+
+#brandsSection h1{
+    font-size: 52px;
+    line-height: 65px;
+}
+
+#brandsSection span{
+    font-size: 60px;
+}
+
+#brandBoxes{
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.brandCard{
+    width: 100%;
+    padding: 30px 22px;
+}
+
+.brandCard i{
+    font-size: 38px;
+}
+
+.brandCard h3{
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.brandCard p{
+    margin-top: 12px;
+    line-height: 28px;
+}
+
+#ctaBtn{
+    padding: 20px;
+    margin-left: -20px;
+    margin-bottom: 100px;
+}
+
+
+/* about */
+
+#navbar{
+    padding: 18px 20px;
+    gap: 12px;
+}
+
+#logo{
+    font-size: 20px;
+}
+
+#logo p{
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+#navLinks{
+    gap: 18px;
+}
+
+#navLinks a{
+    font-size: 11px;
+}
+
+#navBtn{
+    padding: 12px 26px;
+    font-size: 13px;
+}
+
+#quoteSection{
+    padding: 10px 20px 40px;
+}
+
+#quoteSection h2{
+    font-size: 30px;
+    line-height: 48px;
+}
+
+/* registration */
+
+#Rnavbar{
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#logo{
+    font-size: 20px;
+    text-align: center;
+}
+
+#logo p{
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+#navLinks{
+    gap: 18px;
+}
+
+#navLinks a{
+    font-size: 11px;
+}
+
+#navBtn{
+    padding: 10px 22px;
+    font-size: 13px;
+    border-radius: 10px;
+}
 }
