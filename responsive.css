@@ -477,3 +477,66 @@
     border-radius: 10px;
 }
 }
+
+
+@media (max-width: 400px){
+
+/* home */
+    #navbar{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #navLinks{
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navButton{
+        width: 170px;
+        font-size: 14px;
+        padding: 10px;
+    }
+    #ctaSection{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #ctaSection h1{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    #ctaBtn{
+        width: 100%;
+        max-width: 220px;
+    }
+    
+    /* about */
+        #navbar{
+        position: relative;
+        z-index: 10;
+        margin-bottom: 25px;
+    }
+
+    #heroSection{
+        padding-top: 40px;
+    }
+
+    .heroLeft h1{
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .heroLeft p{
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+      #quoteSection h2{
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+}
