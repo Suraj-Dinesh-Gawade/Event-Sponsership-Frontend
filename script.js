@@ -78,14 +78,15 @@ if (contactOption) {
     
     });
 
+};
+
     //about page
     // about.js
 
-    const navBtn = document.getElementById("navBtn");
+    // const navBtn = document.getElementById("navBtn");
 
-    navBtn.addEventListener("click", function () {
+    // navBtn.addEventListener("click", function () {
 
-        window.location.href = "registration.html";
+    //     window.location.href = "registration.html";
 
-    });
-};
+    // });

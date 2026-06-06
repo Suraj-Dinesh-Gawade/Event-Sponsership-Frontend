@@ -482,9 +482,16 @@
 @media (max-width: 400px){
 
 /* home */
-    #navbar{
+    #bgImage{
+        top: 0;
+        left: 0;
+        height: 1250px;
+    }
+
+     #navbar{
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
+        padding: 15px;
     }
 
     #navLinks{
@@ -498,22 +505,45 @@
         font-size: 14px;
         padding: 10px;
     }
-    #ctaSection{
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
 
-    #ctaSection h1{
-        font-size: 2rem;
-        line-height: 1.2;
-    }
+  
+#ctaSection{
+    padding: 40px 25px;
+}
 
-    #ctaBtn{
-        width: 100%;
-        max-width: 220px;
-    }
+#ctaSection h1{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+#ctaSection p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+#ctaBtn{
+    margin-left: 5px;
+}
     
+#heroContent{
+    margin-bottom: 140px;
+}
+
+#heroHeading{
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 350px;
+}
+#rightHero{
+    margin-bottom: 40px;
+}
+#statsSection{
+    margin-top: 115px;
+}
+#stepsSection h1 {
+    font-size: 46px;
+    line-height: 65px;
+}
+
     /* about */
         #navbar{
         position: relative;
@@ -539,4 +569,16 @@
         font-size: 2rem;
         line-height: 1.4;
     }
+
+    /* events */
+    .EBgImage{
+        height: 100% !important;
+    }
+    #ctaSectionHeading{
+        font-size: 25px !important;
+    }
+    .ECtaBtn{
+        margin-left: -3px !important;
+    }
+
 }
