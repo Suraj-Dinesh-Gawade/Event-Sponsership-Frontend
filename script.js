@@ -33,7 +33,7 @@ let timeslot = document.getElementById('select-time-slot');
 let instagram_id_field = document.getElementById('instagram_id');
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:7000/addRequest', {
+        const response = await fetch('https://event-sponsership-backend.onrender.com/addRequest', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
